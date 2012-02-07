@@ -1,0 +1,105 @@
+Input Command: graph 1 
+Input Command: alists 1 
+Adjacency lists of graph 1:
+ 1:  2 
+ 2:  1  3 
+ 3:  2  4  7 
+ 4:  3  5 
+ 5:  4  7 
+ 6:  7 
+ 7:  3  5  6 
+
+Input Command: cycle 1 
+Graph 1 has cycle: 7 5 4 3 
+Input Command: graph 2 
+Input Command: alists 2 
+Adjacency lists of graph 2:
+ 1:  2 
+ 2:  1  3 
+ 3:  2  4  7 
+ 4:  3  5 
+ 5:  4 
+ 6:  7 
+ 7:  3  6 
+
+Input Command: cycle 2 
+Graph 2  has NO cycles.
+Input Command: connected 2 
+Graph 2 is CONNECTED and has the following components:
+Component 1: 1 2 3 4 5 7 6 
+Input Command: graph 3 
+Input Command: alists 3 
+Adjacency lists of graph 3:
+ 1:  3 
+ 2: 
+ 3:  1  4 
+ 4:  3 
+ 5:  6 
+ 6:  5 
+
+Input Command: connected 3 
+Graph 3 is DISCONNECTED and has the following components:
+Component 1: 1 3 4 
+Component 2: 2 
+Component 3: 5 6 
+Input Command: graph 4 
+Input Command: alists 4 
+Adjacency lists of graph 4:
+ 1:  2  3 
+ 2:  1  3  4 
+ 3:  1  2  5 
+ 4:  2  5 
+ 5:  3  4 
+
+Input Command: bipartite 4 
+Graph 4  is NOT bipartite
+Input Command: bipartite 1 
+Graph 1 is bipartite with the following bipartation:
+ColorX: 1 3 5 6 
+ColorY: 2 4 7 
+Input Command: cutedges 1 
+There is a cut edge at 1--2 and makes:
+Component 1: 1 
+Component 2: 2 3 4 5 7 6 
+There is a cut edge at 2--3 and makes:
+Component 1: 1 2 
+Component 2: 3 4 5 7 6 
+There is a cut edge at 6--7 and makes:
+Component 1: 1 2 3 4 5 7 
+Component 2: 6 
+
+Input Command: alists 1 
+Adjacency lists of graph 1:
+ 1:  2 
+ 2:  1  3 
+ 3:  2  4  7 
+ 4:  3  5 
+ 5:  4  7 
+ 6:  7 
+ 7:  3  5  6 
+
+Input Command: cutedges 4 
+
+Input Command: alists 4 
+Adjacency lists of graph 4:
+ 1:  2  3 
+ 2:  1  3  4 
+ 3:  1  2  5 
+ 4:  2  5 
+ 5:  3  4 
+
+Input Command: graph 5 
+Input Command: alists 5 
+Adjacency lists of graph 5:
+ 1:  2 
+ 2:  1  3 
+ 3:  2  4 
+ 4:  3  5  6 
+ 5:  4 
+ 6:  4 
+
+Input Command: connected 5 
+Graph 5 is CONNECTED and has the following components:
+Component 1: 1 2 3 4 5 6 
+Input Command: cycle 5 
+Graph 5  has NO cycles.

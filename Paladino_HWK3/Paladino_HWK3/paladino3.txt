@@ -1,0 +1,51 @@
+Input Command: printpre 1 
+	Tree 1 Pre: Tree Empty
+Input Command: insertroot 1 52 
+Input Command: insertroot 0 52 
+Input Command: insert 1 12 52 1 
+Input Command: insert 1 14 52 2 
+Input Command: insert 1 18 52 3 
+Input Command: insert 1 8 12 1 
+Input Command: insert 1 6 12 2 
+Input Command: insert 1 2 12 3 
+Input Command: insert 1 4 2 1 
+Input Command: insert 1 7 2 2 
+Input Command: insert 1 61 14 1 
+Input Command: insert 1 62 14 2 
+Input Command: insert 1 63 14 3 
+Input Command: insert 1 77 18 1 
+Input Command: insert 1 43 18 3 
+Input Command: insert 1 10 43 3 
+Input Command: insert 1 88 12 3 
+-- Failed 
+Input Command: printpre 1 
+	Tree 1 Pre: 52 12 8 6 2 4 7 14 61 62 63 18 77 43 10 
+Input Command: printlevel 1 
+	Tree 1 Level: 52 12 14 18 8 6 2 4 7 61 62 63 77 43 10 
+Input Command: transplantsubtree 1 12 2 
+Input Command: printpre 1 
+	Tree 1 Pre: 52 14 61 62 63 18 77 43 10 
+Input Command: printpre 2 
+	Tree 2 Pre: 12 8 6 2 4 7 
+Input Command: deletesubtree 1 14 
+Input Command: printpre 1 
+	Tree 1 Pre: 52 18 77 43 10 
+Input Command: createsubtree 1 2 52 2 
+Input Command: printpre 1 
+	Tree 1 Pre: 52 12 8 6 2 4 7 18 77 43 10 
+Input Command: printpre 2 
+	Tree 2 Pre: 12 8 6 2 4 7 
+Input Command: = 5 2 
+Input Command: printpre 5 
+	Tree 5 Pre: 12 8 6 2 4 7 
+Input Command: printpre 2 
+	Tree 2 Pre: 12 8 6 2 4 7 
+Input Command: == 2 5 
+	Tree 2 and Tree 5 Are Equal
+Input Command: siblings 1 77 43 
+	In Tree 1 77 and 43 are siblings.
+Input Command: insert 1 500 200 3 
+-- Failed 
+Input Command: insert 1 83 43 2 
+Input Command: printpre 1 
+	Tree 1 Pre: 52 12 8 6 2 4 7 18 77 43 83 10 

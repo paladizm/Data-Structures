@@ -1,0 +1,61 @@
+/**********************************************************
+* Author: Zac Paladino
+* Date: Sep/02/2008
+* Purpose: The Purpose of the program was to make a 
+*          functioning polynomial calculator using
+*		   ! for print, * for the product, + for the sum
+*		   and @ for a value associated with x.
+* Input: The program will ask you for a file to get input
+*        from.
+* Output: The program will ask you for a file to get output
+*        from.
+* Login-id: cps350-n1.16
+**********************************************************/
+#ifndef POLYNOMIAL_H
+#define POLYNOMIAL_H
+class Polynomial{
+private:
+	int numterms; //Number of terms.
+	struct Polynode{ //Node of the Polynomial list.
+		double constant; //Has a constant.
+		int exp; // Has an exponent.
+		Polynode *next; // Pointer to the next node
+	};
+	Polynode *header, *end; //Head and an End of the list.
+	void AddPolyToList(double constant, int exponent);
+	//Take a constant an an exponent and creates a Polynode and inserts it
+	//in decending order of exponents.
+	//Pre: The constant must be double and the exponent an int.
+	//Post: The polynomial will be added to the list. 	
+	Polynomial& operator+(const Polynomial &first);
+	//This overloaded operator + deals with the addition of two
+	//polynomials.
+	//Pre: Must be adding two polynomials. It also simplifies the equation.
+	//Post: Returns the added polynomial.
+	Polynomial& operator*(const Polynomial &first);
+	//This overloaded operator * deals with the product of two
+	//polynomials.
+	//Pre: Must be multiplying two polynomials. It also simplifies the equation.
+	//Post: Returns the product of the polynomials.
+public:
+	Polynomial(); //Constructor
+	~Polynomial(); //Destructor
+void DefinePoly(istream &ins);
+	//Reads a line of data from the stream ins and initializes the polynomial.
+	//Pre: Name of the polynomial has already been read. The remaining line
+	//     is the number of terms and data for each of the terms.
+	//Post: Original value of self is lost.
+void AddPoly(const Polynomial& First, const Polynomial& Second);
+	//self = First + Second
+	//Pre: self is different from First, Second.
+	//Post: First, Second remain unchanged. Original value of self is lost.
+void MultiplyPoly(const Polynomial& First, const Polynomial& Second);
+	//self = First * Second
+	//Pre: self is different from First, Second.
+	//Post: First, Second remain unchanged. Original value of self is lost.	
+void PrintPoly(ostream &outs);
+	//Output the polynomial to the stream outs.
+double EvalPoly(double x);
+	//Return the value of the polynomial at the given value for variable x.
+};
+#endif

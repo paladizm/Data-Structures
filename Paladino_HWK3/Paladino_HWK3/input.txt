@@ -1,0 +1,36 @@
+printpre 1
+insertroot 1 52
+insertroot 0 52
+insert 1  12  52  1
+insert 1  14  52  2
+insert 1  18  52  3
+insert 1   8  12  1
+insert 1   6  12  2
+insert 1   2  12  3
+insert 1   4   2  1
+insert 1   7   2  2
+insert 1  61  14  1
+insert 1  62  14  2
+insert 1  63  14  3
+insert 1  77  18  1
+insert 1  43  18  3
+insert 1  10  43  3
+insert 1  88  12  3
+printpre 1
+printlevel 1
+transplantsubtree 1 12 2
+printpre 1
+printpre 2
+deletesubtree 1 14
+printpre 1
+createsubtree 1 2 52 2
+printpre 1
+printpre 2
+= 5 2
+printpre 5
+printpre 2
+== 2 5
+siblings 1 77 43
+insert 1 500 200 3
+insert 1  83  43 2
+printpre 1

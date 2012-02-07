@@ -1,0 +1,62 @@
+Polynomial B Defined
+
+Polynomial D Defined
+
+Evaluation of B+D To Make Polynomial A
+
+Printing A:
+A = -3.00*x^5 + 9.00*x^4 - x^2 + 3.00*x + 5.00
+
+Printing B:
+B = 6.00*x^4 - x^2 - 4.00*x + 3.00
+
+Printing D:
+D = -3.00*x^5 + 3.00*x^4 + 7.00*x + 2.00
+
+Evaluation of E+A To Make Polynomial C
+
+Polynomial X Defined
+
+Polynomial Y Defined
+
+Evaluation of X+Y To Make Polynomial Z
+
+Printing Y:
+Y = 5.00*x^7
+
+Printing Z:
+Z = 0.0
+
+Evaluation of B*X To Make Polynomial A
+
+A(-5.00) = 1464062500.00
+
+B(6.00) = 7719.00
+
+C(2.20) = 62.98
+
+Evaluation of D*D To Make Polynomial G
+
+Printing D:
+D = -3.00*x^5 + 3.00*x^4 + 7.00*x + 2.00
+
+Printing G:
+G = 9.00*x^10 - 18.00*x^9 + 9.00*x^8 - 42.00*x^6 + 30.00*x^5 + 12.00*x^4 + 49.00*x^2 + 28.00*x + 4.00
+
+Polynomial A Defined
+
+Polynomial K Defined
+
+Evaluation of A+K To Make Polynomial S
+
+Evaluation of A*K To Make Polynomial T
+
+Printing S:
+S = 13.00*x - 3.00
+
+Printing T:
+T = -9.00*x^10 + 3.00*x^6 + 9.00*x^5 + 42.00*x^2 - 21.00*x
+
+Printing E:
+E = Polynomial is not defined.
+

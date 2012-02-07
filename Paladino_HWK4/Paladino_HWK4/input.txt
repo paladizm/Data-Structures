@@ -1,0 +1,40 @@
+insert 1 50
+insert 1 30
+insert 1 90
+insert 1 80
+insert 1 95
+print 1
+width 1
+insert 1 20
+insert 1 40
+print 1
+avl 1
+= 2 1
+== 1 2
+insert 1 70
+insert 1 60
+insert 1 85
+print 1
+avl 1
+ll 1 60
+ll 1 90
+print 1
+rr 1 80
+print 1
+onell 1
+print 1
+avl 1
+insert 3 50
+insert 3 40
+insert 3 30
+insert 3 20
+insert 3 10
+print 3
+avl 3
+onell 3
+delete 3 10
+print 3
+onell 3
+print 3
+width 3
+width 1
